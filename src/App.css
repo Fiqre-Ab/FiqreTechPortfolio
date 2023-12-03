@@ -1,0 +1,15 @@
+/* App.css */
+/* Hide scrollbar for Webkit browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE */
+* {
+  -ms-overflow-style: none;
+}
