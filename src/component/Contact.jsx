@@ -4,7 +4,6 @@
  
 const Section = styled.div`
     height: 100vh;
-    background-color: #85c994;
      scroll-snap-align: center;
      
 `

@@ -11,6 +11,11 @@ const StyledContainer = styled.div`
   scroll-snap-type: y mandatory;
   scroll-behavior:smooth;
   scrollbar-width: none; /* For Firefox */
+  background: url("../img/bg.png");
+  background-attachment: fixed; /* Keep the background fixed in place */
+  background-size: cover; /* Cover the entire viewport */
+  background-repeat: no-repeat;
+  color:white;
 `;
 
 function App() {

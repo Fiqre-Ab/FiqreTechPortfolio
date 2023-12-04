@@ -1,7 +1,9 @@
 /* App.css */
 /* Hide scrollbar for Webkit browsers */
+
 ::-webkit-scrollbar {
   display: none;
+
 }
 
 /* Hide scrollbar for Firefox */
