@@ -4,7 +4,8 @@ import About from "./component/About"
 import Works from "./component/Works"
 import Contact from "./component/Contact"
 import styled from 'styled-components';
-
+import { Outlet } from 'react-router-dom';
+import Navbar from './component/Navbar'
 const StyledContainer = styled.div`
   height: auto;
   overflow-y: auto;
@@ -17,18 +18,13 @@ const StyledContainer = styled.div`
   background-repeat: no-repeat;
   color:white;
 `;
-
 function App() {
-
   return (
     <StyledContainer>
-  <Home/>
-  <About/>
-  <Works/>
-  <Contact/>
-
+      <Navbar/>
+      <Outlet/>
     </StyledContainer>
-  )
+  );
 }
 
 export default App

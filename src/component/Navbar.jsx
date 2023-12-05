@@ -1,99 +1,110 @@
- 
- import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 const Section = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
-// height:100vh;
-// scroll-snap-align:center;
-display:flex;
-// flex-direction:columns;
-justify-content:center;
-
-`
 const Container = styled.div`
-// height:100vh;
-width:1400px;
-display:flex;
-justify-content:space-between;
-padding:10px 0px;
-// color:white;
-`
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #da4ea2;
+  color: white;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
 const Icons = styled.div`
-display:flex;
-align-item:center;
-gap:20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`;
 
-`
 const Icon = styled.img`
-width:50px;
-height:30px;
-cursor:pointer;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+`;
 
-
-`
 const Links = styled.div`
-display:flex;
-align-item:center;
-gap:50px;
-color:white;
-
-
-
-`
+  display: flex;
+  align-items: center;
+  gap: 50px;
+`;
 
 const Logo = styled.img`
-  // Styles for the logo
-  width:90px;
-  height:50px
+  width: 190px;
+  height: 80px;
+  cursor: pointer;
  
 `;
 
 const List = styled.ul`
   list-style-type: none;
   display: flex;
-  gap:20px;
-  // Additional styles
+  gap: 30px;
+  padding: 0;
+  margin: 0;
 `;
 
 const ListItem = styled.li`
-  // margin-right: 20px;
-  cursor:pointer;
-  // Additional styles
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
-const Button=styled.button`
-width:100px;
-height:30px;
-padding:10px; 
-background-color:#da43a2;
-border-radius:5px;
-color:white;
-border:none;
-  cursor:pointer;
 
-`
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const Button = styled.button`
+  width: 100px;
+  height: 40px;
+  background-color: #da43a2;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #c23d87;
+  }
+`;
 
 function Navbar() {
   return (
-   
-      <Section>
-      <Container> 
+    <Section>
+      <Container>
         <Links>
-        <Logo src="../img/logo.png" alt="logo"/>
-        <List>
-          <ListItem>Home</ListItem>
-             <ListItem>About</ListItem>
-                <ListItem>Portfolio</ListItem>
-                   <ListItem>Contact</ListItem>
-                    <ListItem>Resume</ListItem>
-        </List>
+          <Logo src="../img/logo.png" alt="logo" />
+          <List>
+            <StyledLink to="/"><ListItem>Home</ListItem></StyledLink>
+            <StyledLink to="/about"><ListItem>About</ListItem></StyledLink>
+            <StyledLink to="/portfolio"><ListItem>Portfolio</ListItem></StyledLink>
+            <StyledLink to="/contact"><ListItem>Contact</ListItem></StyledLink>
+            <StyledLink to="/resume"><ListItem>Resume</ListItem></StyledLink>
+          </List>
         </Links>
         <Icons>
-          <Icon src="../img/searchicon.png"></Icon>
+          <Icon src="../img/searchicon.png" alt="Search Icon" />
           <Button>Search Now</Button>
         </Icons>
-        </Container>
-      </Section>
-  )
+      </Container>
+    </Section>
+  );
 }
 
-export default Navbar
+export default Navbar;
