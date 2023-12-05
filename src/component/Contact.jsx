@@ -51,7 +51,7 @@ const Front = styled(CardSide)`
 `;
 
 const Back = styled(CardSide)`
-  background: url('../public/img/contact.png') center/cover; // image URL 
+  background: url('../img/contact.png') center/cover; // image URL 
   transform: rotateY(180deg);
 `;
 

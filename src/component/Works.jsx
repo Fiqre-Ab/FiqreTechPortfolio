@@ -87,7 +87,7 @@ function Works() {
       <Container>
         {/* Repeat this Card component for each project */}
         <Card>
-          <CardImage src="../public/worksImg/game.png" alt="Game Image" />
+          <CardImage src="../worksImg/game.png" alt="Game Image" />
           <CardBody>
             <CardTitle>My Sequel Adventure</CardTitle>
             <CardText> A game application where users can first create a character. Then they can use their character to fight against to win battles and grow their strength points and add up their wins</CardText>
@@ -98,7 +98,7 @@ function Works() {
           </CardBody>
         </Card>
             <Card>
-          <CardImage src="../public/worksImg/Note.png" alt="Note Image" />
+          <CardImage src="../worksImg/Note.png" alt="Note Image" />
           <CardBody>
             <CardTitle>The Note Flow</CardTitle>
             <CardText>a web application that allows users to create, save, and manage notes. It provides a simple and intuitive interface for keeping track of important information</CardText>
@@ -109,7 +109,7 @@ function Works() {
           </CardBody>
         </Card>
             <Card>
-          <CardImage src="../public/worksImg/Movie.png" alt="Movie Image" />
+          <CardImage src="../worksImg/Movie.png" alt="Movie Image" />
           <CardBody>
             <CardTitle>What a Watch</CardTitle>
             <CardText>a web application that simplifies the process of searching for movies and customizing the information displayed according to the user's interests.</CardText>
@@ -120,7 +120,7 @@ function Works() {
           </CardBody>
         </Card>
             <Card>
-          <CardImage src="../public/worksImg/codeQuiz.png" alt="JATE Image" />
+          <CardImage src="../worksImg/codeQuiz.png" alt="JATE Image" />
           <CardBody>
             <CardTitle>Code Quiz </CardTitle>
             <CardText> a web application that allows users to test their knowledge of JavaScript fundamentals</CardText>
@@ -131,7 +131,7 @@ function Works() {
           </CardBody>
         </Card>
             <Card>
-          <CardImage src="../public/worksImg/techBlog.png" alt="Project Image" />
+          <CardImage src="../worksImg/techBlog.png" alt="Project Image" />
           <CardBody>
             <CardTitle>TechInsightsBlog</CardTitle>
             <CardText> Content Management System (CMS)-style blog site designed to allow users to create, manage, and share blog posts.</CardText>
@@ -142,7 +142,7 @@ function Works() {
           </CardBody>
         </Card>
             <Card>
-          <CardImage src="../public/worksImg/J.A.T.E.png" alt="JATE Image"  />
+          <CardImage src="../worksImg/J.A.T.E.png" alt="JATE Image"  />
           <CardBody>
             <CardTitle>WebPackTextEditor</CardTitle>
             <CardText> A simple text editor application built using Webpack, PWA (Progressive Web App) features, and IndexedDB for data storage.</CardText>
