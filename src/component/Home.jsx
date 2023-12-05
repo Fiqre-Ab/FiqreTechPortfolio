@@ -98,7 +98,7 @@ const Img = styled.img`
   }
 
   @media (max-width: 768px) {
-    width: 100%; // Full width on mobile
+    width: 50%; // Full width on mobile
     height: auto; // Adjust height automatically
   }
 `;
