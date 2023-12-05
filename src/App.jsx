@@ -1,9 +1,6 @@
 import './App.css'
-import Home from "./component/Home"
-import About from "./component/About"
-import Works from "./component/Works"
-import Contact from "./component/Contact"
-import styled from 'styled-components';
+
+import styled from 'styled-components'
 import { Outlet } from 'react-router-dom';
 import Navbar from './component/Navbar'
 const StyledContainer = styled.div`
