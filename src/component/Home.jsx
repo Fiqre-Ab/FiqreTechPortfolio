@@ -113,8 +113,8 @@ function Home() {
           <Whatido>
             <Subtitle>What I Do</Subtitle>
           </Whatido>
-          <Desc>Crafting Digital Experiences as a Full Stack Developer</Desc>
-          <Button>Discover My Journey</Button>
+          <Desc>I am a passionate Full Stake Software developer and I interested to study updated technologies and tackle complex problems. My technical and management skills which will use to support the growth of the organization as well as myself.</Desc>
+          <Button>Hire ME</Button>
         </Left>
         <Right>
           <Img src="../img/space.png" alt="Innovative Space" />

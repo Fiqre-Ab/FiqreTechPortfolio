@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -109,21 +109,21 @@ function Works() {
           </CardBody>
         </Card>
             <Card>
-          <CardImage src="../public/worksImg/Movie.png" alt="Project Image" />
+          <CardImage src="../public/worksImg/Movie.png" alt="Movie Image" />
           <CardBody>
-            <CardTitle>Crypto Currency Dashboard & Financial Visualization</CardTitle>
-            <CardText>Description of the project...</CardText>
+            <CardTitle>What a Watch</CardTitle>
+            <CardText>a web application that simplifies the process of searching for movies and customizing the information displayed according to the user's interests.</CardText>
             <ButtonGroup>
-              <Button to="/github">Github</Button>
-              <Button to="/live-demo">Live Demo</Button>
+              <Button to="https://github.com/d-a-v-i-d-w-r-i-g-h-t/what-to-watch">Github</Button>
+              <Button to="https://jamessahunter.github.io/What-to-watch/">Live Demo</Button>
             </ButtonGroup>
           </CardBody>
         </Card>
             <Card>
           <CardImage src="../public/worksImg/codeQuiz.png" alt="JATE Image" />
           <CardBody>
-            <CardTitle>Crypto Currency Dashboard & Financial Visualization</CardTitle>
-            <CardText>Description of the project...</CardText>
+            <CardTitle>Code Quiz </CardTitle>
+            <CardText> a web application that allows users to test their knowledge of JavaScript fundamentals</CardText>
             <ButtonGroup>
                <Button to="https://github.com/Fiqre-Ab/code-quize">Github</Button>
               <Button to="https://fiqre-ab.github.io/code-quize/">Live Demo</Button>
@@ -133,22 +133,22 @@ function Works() {
             <Card>
           <CardImage src="../public/worksImg/techBlog.png" alt="Project Image" />
           <CardBody>
-            <CardTitle>Crypto Currency Dashboard & Financial Visualization</CardTitle>
-            <CardText>Description of the project...</CardText>
+            <CardTitle>TechInsightsBlog</CardTitle>
+            <CardText> Content Management System (CMS)-style blog site designed to allow users to create, manage, and share blog posts.</CardText>
             <ButtonGroup>
-              <Button to="/github">Github</Button>
-              <Button to="/live-demo">Live Demo</Button>
+              <Button to="https://github.com/Fiqre-Ab/TechInsightsBlog">Github</Button>
+              <Button to="https://polar-harbor-69184-86e07a8cf684.herokuapp.com/">Live Demo</Button>
             </ButtonGroup>
           </CardBody>
         </Card>
             <Card>
           <CardImage src="../public/worksImg/J.A.T.E.png" alt="JATE Image"  />
           <CardBody>
-            <CardTitle>Crypto Currency Dashboard & Financial Visualization</CardTitle>
-            <CardText>Description of the project...</CardText>
+            <CardTitle>WebPackTextEditor</CardTitle>
+            <CardText> A simple text editor application built using Webpack, PWA (Progressive Web App) features, and IndexedDB for data storage.</CardText>
             <ButtonGroup>
-              <Button to="/github">Github</Button>
-              <Button to="/live-demo">Live Demo</Button>
+              <Button to="https://github.com/Fiqre-Ab/WebPackTextEditor">Github</Button>
+              <Button to="https://texteditor-7odd.onrender.com//">Live Demo</Button>
             </ButtonGroup>
           </CardBody>
         </Card>
