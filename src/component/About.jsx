@@ -1,22 +1,14 @@
     import React, { useState } from 'react';
-    import styled, { keyframes } from 'styled-components';
+    import styled from 'styled-components';
 
 
-    const fadeInUp = keyframes`
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    `;
+
+
 
     const AboutContainer = styled.div`
-    color: #777;
-    padding: 40px 0;
-        height: 100vh;
+    color: #white;
+    padding: 10px 0;
+    height: 100vh;
     scroll-snap-align: center;
     display:flex;
     flex-direction:column
@@ -28,7 +20,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px; /* Space between text/image and the skills orbit */
+    margin-bottom: 2px; /* Space between text/image and the skills orbit */
     `;
 
     const Column = styled.div`

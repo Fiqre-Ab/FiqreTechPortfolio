@@ -12,7 +12,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: #da4ea2;
+ background-color: rgba(218, 74, 162, 0.8);
   color: white;
 
   @media (max-width: 768px) {
@@ -39,12 +39,16 @@ const Links = styled.div`
   gap: 50px;
 `;
 
+
 const Logo = styled.img`
   width: 190px;
   height: 80px;
   cursor: pointer;
- 
-`;
+
+  @media (max-width: 768px) {
+    order: -1; // This will move the logo to the first position on small screens
+  }
+`
 
 const List = styled.ul`
   list-style-type: none;
@@ -94,8 +98,9 @@ function Navbar() {
             <StyledLink to="/"><ListItem>Home</ListItem></StyledLink>
             <StyledLink to="/about"><ListItem>About</ListItem></StyledLink>
             <StyledLink to="/portfolio"><ListItem>Portfolio</ListItem></StyledLink>
-            <StyledLink to="/contact"><ListItem>Contact</ListItem></StyledLink>
             <StyledLink to="/resume"><ListItem>Resume</ListItem></StyledLink>
+            <StyledLink to="/contact"><ListItem>Contact</ListItem></StyledLink>
+            
           </List>
         </Links>
         <Icons>
