@@ -2,10 +2,10 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+
 const Section = styled.section`
  padding: 4rem 0;
-
-  min-height: 100vh; // Ensure it's at least as tall as the viewport, but can grow
+  height: auto;
   scroll-snap-align: start; // Align to the start of the section
 `;
 
@@ -78,7 +78,7 @@ const Title = styled.h2`
   margin: 0;
 `;
 
-function Works() {
+function Work() {
   return (
     <Section>
           <TitleSection>
@@ -159,4 +159,4 @@ function Works() {
   );
 }
 
-export default Works;
+export default Work;

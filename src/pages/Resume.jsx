@@ -4,13 +4,14 @@ import { motion } from 'framer-motion';
 
 // Global style for the section
 const Section = styled.section`
-  color: #fff; // Adjusted for better contrast
+   color: #fff;
   padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100vh;
+   height: auto;
+  
 `;
 
 // Styled container to center the content and apply grid, responsive for mobile

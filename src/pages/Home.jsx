@@ -1,9 +1,9 @@
 
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
 
 const Section = styled.div`
-  height: 100vh;
+  height: auto;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
@@ -60,8 +60,7 @@ const Desc = styled.p`
     font-size: 1rem;
   }
 `;
-
-const Button = styled.button`
+const Button = styled(Link)`
   background-color: #da4ea2;
   color: white;
   font-weight: 500;
@@ -70,6 +69,13 @@ const Button = styled.button`
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove default link underline */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+
+  &:hover {
+    background-color: #c23d87;
+  }
 `;
 
 const Right = styled.div`
@@ -109,12 +115,12 @@ function Home() {
     
       <Containers>
         <Left>
-          <Title>Hi, I'm Fiqre</Title>
+          <Title>Hi, I am Fiqre</Title>
           <Whatido>
             <Subtitle>What I Do</Subtitle>
           </Whatido>
           <Desc>I am a passionate Full Stake Software developer and I interested to study updated technologies and tackle complex problems. My technical and management skills which will use to support the growth of the organization as well as myself.</Desc>
-          <Button>Hire ME</Button>
+          <Button to="http://localhost:5173/contact">Hire ME</Button>
         </Left>
         <Right>
           <Img src="../img/space.png" alt="Innovative Space" />
