@@ -6,6 +6,7 @@ import styled from 'styled-components';
 const Section = styled.div`
   display: flex;
   justify-content: center;
+   list-style-type: none; 
 `;
 
 // Container for the Navbar content
@@ -15,7 +16,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: #da4ea2;
+ background-color: rgba(74, 52, 105, 0.8);
   color: white;
 
   @media (max-width: 768px) {
@@ -59,14 +60,15 @@ const Logo = styled.img`
 
 // List for navigation links
 const List = styled.ul`
-  list-style-type: none;
   display: flex;
   gap: 30px;
   padding: 0;
   margin: 0;
+   list-style-type: none; 
 
   @media (max-width: 768px) {
     display: none;
+    list-style-type: none; // Add this line to remove bullets on mobile
   }
 `;
 
@@ -84,6 +86,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+    
   }
 `;
 

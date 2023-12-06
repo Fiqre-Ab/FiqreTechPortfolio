@@ -1,19 +1,18 @@
 /* App.css */
-/* Hide scrollbar for Webkit browsers */
 
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-  display: none;
-  
-
+  width: 0.2rem; /* Adjust the width of the scrollbar */
+  display: none; /* Hide scrollbar */
 }
 
 /* Hide scrollbar for Firefox */
 * {
-  scrollbar-width: none;
+  scrollbar-width: thin; /* Adjust the width of the scrollbar */
+  scrollbar-color: transparent transparent; /* Hide scrollbar */
 }
 
 /* Hide scrollbar for IE */
 * {
   -ms-overflow-style: none;
 }
-

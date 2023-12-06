@@ -1,5 +1,5 @@
 # My React Portfolio
-[![DEPLOY](https://img.shields.io/badge/DEPLOY-%E2%9C%93-brightgreen)](https://656f6f307cd7d61ef68b3aea--marvelous-shortbread-a0853f.netlify.app/)
+[![DEPLOY](https://img.shields.io/badge/DEPLOY-%E2%9C%93-brightgreen)](https://6570218da71a7a3e0cad5c98--marvelous-shortbread-a0853f.netlify.app/)
 
 Welcome to my personal portfolio website built with React! This project showcases my skills, projects, and provides an overview of who I am as a web designer and full-stack developer.
 

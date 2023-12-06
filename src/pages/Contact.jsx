@@ -43,7 +43,6 @@ const CardSide = styled.div`
 `;
 
 const Front = styled(CardSide)`
-  background: url('../img/contact.png') center/cover;
   color: white;
   font-size: 1.5em;
   &:hover {
@@ -69,6 +68,7 @@ const StyledInput = styled.input`
   margin-bottom: 1em;
   border-radius: 10px;
   border: 1px solid #ccc;
+  
 `;
 
 const StyledTextArea = styled.textarea`
@@ -81,6 +81,7 @@ const StyledTextArea = styled.textarea`
 `;
 
 const SubmitButton = styled.button`
+  margin-bottom: 5px;
   padding: 0.75em 2em;
   color: white;
   background-color: #e63946;
@@ -95,11 +96,19 @@ const SubmitButton = styled.button`
 `;
 // Styled component for error messages
 const ErrorMessage = styled.p`
-  color: #ff0000;
+  
+
+  color: purple; /* bright yellow for contrast */
+  background-color:red;
+  font-weight: bold;
+  font-size: 20px;
   margin-bottom: 1em;
+  @media (max-width: 768px) { /* Adjust size for smaller screens */
+    font-size: 80px;
+  }
 `;
 const SuccessMessage = styled.p`
-  color: white; /* whtie color for success message */
+  color: white; /*  color for success message */
   font-weight:bold;
   margin-bottom: 1em;
 `;

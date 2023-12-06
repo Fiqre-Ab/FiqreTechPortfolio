@@ -1,6 +1,9 @@
 
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components';//to style 
+import { Link } from 'react-router-dom';//link 
+import { useSpring, animated, config } from 'react-spring';//adding animated spring text
+import Typist from 'react-typist';//adding animated  typist for text
+
 
 const Section = styled.div`
   height: auto;
@@ -29,7 +32,7 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 5px;
+  gap: 10px;
 
   @media (max-width: 768px) {
     align-items: center;
@@ -37,8 +40,9 @@ const Left = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  font-size: 74px;
+const Title = styled(animated.h1)`
+ color: #3498db;
+  font-size: 75px;
   @media (max-width: 768px) {
     font-size: 2rem;
   }
@@ -47,19 +51,23 @@ const Title = styled.h1`
 const Whatido = styled.div`
   display: flex;
   align-items: center;
+  gap:10px;
 `;
 
-const Subtitle = styled.h2`
+const Subtitle = styled(animated.h2)`
   color: #da4ea2;
 `;
 
-const Desc = styled.p`
+const Desc = styled(animated.p)`
   font-size: 24px;
   color: lightgray;
+  gap:10px;
   @media (max-width: 768px) {
     font-size: 1rem;
+
   }
 `;
+
 const Button = styled(Link)`
   background-color: #da4ea2;
   color: white;
@@ -70,7 +78,7 @@ const Button = styled(Link)`
   border-radius: 6px;
   cursor: pointer;
   text-align: center;
-  text-decoration: none; /* Remove default link underline */
+  text-decoration: none; /* Remove default link underline and make them none */
   transition: background-color 0.3s ease; /* Smooth transition on hover */
 
   &:hover {
@@ -83,7 +91,7 @@ const Right = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; // Adjusted for absolute positioning of Img
+  position: relative; // absolute positioning of Img
 
   @media (max-width: 768px) {
     order: -1; // Image above the text on mobile
@@ -105,21 +113,41 @@ const Img = styled.img`
 
   @media (max-width: 768px) {
     width: 50%; // Full width on mobile
-    height: auto; // Adjust height automatically
+    height: auto; //  height automatically
   }
 `;
 
 function Home() {
+  const subtitleAnimation = useSpring({
+    from: { opacity: 0, transform: 'translateY(50px)' },
+    to: { opacity: 1, transform: 'translateY(0)' },
+    config: config.wobbly,
+    delay: 300, // Delay for a cool one-by-one effect
+  });
+
+  const descAnimation = useSpring({
+    from: { opacity: 0, transform: 'translateY(50px)' },
+    to: { opacity: 1, transform: 'translateY(0)' },
+    config: config.wobbly,
+    delay: 600,
+  });
+
   return (
     <Section>
-    
       <Containers>
         <Left>
-          <Title>Hi, I am Fiqre</Title>
+          <Typist startDelay={1000} cursor={{ hideWhenDone: true }}>
+            <Title style={subtitleAnimation}>
+              <Typist.Delay ms={500} />
+              Hi, I am Fiqre
+            </Title>
+          </Typist>
           <Whatido>
-            <Subtitle>What I Do</Subtitle>
+            <Subtitle style={subtitleAnimation}>What I Do</Subtitle>
           </Whatido>
-          <Desc>I am a passionate Full Stake Software developer and I interested to study updated technologies and tackle complex problems. My technical and management skills which will use to support the growth of the organization as well as myself.</Desc>
+          <Desc style={descAnimation}>
+            I am a passionate Full Stake Software developer and I am interested in studying updated technologies and tackling complex problems. My technical and management skills will be used to support the growth of the organization as well as myself.
+          </Desc>
           <Button to="http://localhost:5173/contact">Hire ME</Button>
         </Left>
         <Right>
