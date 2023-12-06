@@ -104,6 +104,10 @@ const Button = styled.button`
   &:hover {
     background-color: #c23d87;
   }
+    @media (max-width: 768px) {
+    display: none; // This will hide the text on screens smaller than 768px
+  }
+  
 `;
 
 // Hamburger menu icon for mobile view

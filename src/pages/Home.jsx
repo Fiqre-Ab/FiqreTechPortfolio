@@ -117,6 +117,7 @@ const Img = styled.img`
   }
 `;
 
+
 function Home() {
   const subtitleAnimation = useSpring({
     from: { opacity: 0, transform: 'translateY(50px)' },
@@ -131,6 +132,7 @@ function Home() {
     config: config.wobbly,
     delay: 600,
   });
+  
 
   return (
     <Section>
