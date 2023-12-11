@@ -80,8 +80,71 @@ const itemVariants = {
 };
 
 // Skill data for front-end and back-end proficiencies
-const frontEndSkills = ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS', 'SASS'];
-const backEndSkills = ['Node.js', 'Express.js', 'MongoDB', 'MySQL', 'SQL', 'Java'];
+// Skill data for front-end and back-end proficiencies
+const frontEndSkills = [
+  'HTML', 
+  'CSS', 
+  'JavaScript', 
+  'React', 
+  'Tailwind CSS', 
+  'SASS',
+  'Bootstrap',
+  'jQuery',
+  'AJAX',
+  'Fetch',
+  'JSON',
+  'Developer Tools (Elements, Console, Network, Sources, Application, etc)',
+  'Web API', 
+  'Day.js',
+  'indexDB',
+  'PWA', 
+  'Webpack',
+  'React Hooks',
+  'JSX',
+  'Context API',
+  'Redux'
+];
+
+const backEndSkills = [
+  'Node.js', 
+  'Express.js', 
+  'MongoDB', 
+  'MySQL', 
+  'SQL', 
+  'Java',
+  'Server Side API',
+  'Insomnia / Postman',
+  'Rest API',
+  'Serverside Templating (Handlebars.js)',
+  'Heroku',
+  'Express Sessions',
+  'bcrypt',
+  'JWT Javascript Web Token',
+  'Relational Databases',
+  'Sequelize ORM',
+  'Non-Relational Databases',
+  'Mongoose ODM',
+  'Apollo GraphQL',
+  'MERN Stack',
+  'Stripe API'
+];
+
+// Additional skills relevant to both front-end and back-end
+const generalSkills = [
+  'Problem-Solving',
+  'Pseudocode',
+  'Git',
+  'GitHub',
+  'Command Line',
+  'Object-oriented Programming (OOP)',
+  'Imperative Programming',
+  'Declarative Programming',
+  'TDD',
+  'Unit Testing w/ JEST',
+  'Data Structures and Algorithms',
+  'Full Stack Development',
+  'Performance'
+];
 
 // Main resume component
 const Resume = () => {
@@ -110,6 +173,23 @@ const Resume = () => {
           <ResumeHeading>Back-end Proficiencies</ResumeHeading>
           <ResumeList>
             {backEndSkills.map((skill, i) => (
+              <ListItem
+                key={skill}
+                variants={itemVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+              >
+                <Dot />
+                {skill}
+              </ListItem>
+            ))}
+          </ResumeList>
+        </Column>
+        <Column>
+         <ResumeHeading>General Skills</ResumeHeading>
+          <ResumeList>
+            {generalSkills.map(skill => (
               <ListItem
                 key={skill}
                 variants={itemVariants}

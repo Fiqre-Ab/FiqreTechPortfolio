@@ -147,10 +147,10 @@ function Home() {
           <Whatido>
             <Subtitle style={subtitleAnimation}>What I Do</Subtitle>
           </Whatido>
-          <Desc style={descAnimation}>
-            I am a passionate Full Stake Software developer and I am interested in studying updated technologies and tackling complex problems. My technical and management skills will be used to support the growth of the organization as well as myself.
-          </Desc>
-          <Button to="http://localhost:5173/contact">Hire ME</Button>
+         <Desc style={descAnimation}>
+            As a dedicated Full Stack Developer specializing in the MERN stack, I bring a robust blend of technical expertise and innovative problem-solving skills to the table. My passion lies in exploring cutting-edge technologies and developing scalable, efficient solutions that drive business success.
+       </Desc>
+          <Button to="/contact">Hire ME</Button>
         </Left>
         <Right>
           <Img src="../img/space.png" alt="Innovative Space" />
