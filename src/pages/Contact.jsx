@@ -96,17 +96,24 @@ const SubmitButton = styled.button`
 `;
 // Styled component for error messages
 const ErrorMessage = styled.p`
-  
-
-  color: purple; /* bright yellow for contrast */
-  background-color:red;
+  color: white; /* i Changed to white for better readability on red background */
+  background-color: red;
   font-weight: bold;
   font-size: 20px;
+  padding: 10px; /* i Added some padding for better spacing */
+  border-radius: 5px; /* i Added a slight border-radius for a softer look */
   margin-bottom: 1em;
-  @media (max-width: 768px) { /* Adjust size for smaller screens */
-    font-size: 80px;
+  text-align: center; /* i Center align text for better focus */
+
+  @media (max-width: 768px) {
+    font-size: 18px; /* Slightly smaller font size for smaller screens */
+    color: red; /* Red text color for contrast */
+    background-color: white; /* i made it White background for contrast */
+    border: 2px solid red; /* i Added a red border for consistency */
+    border-radius: 20px; 
   }
 `;
+
 const SuccessMessage = styled.p`
   color: white; /*  color for success message */
   font-weight:bold;
