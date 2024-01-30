@@ -165,8 +165,8 @@ function Navbar() {
           </List>
         </Links>
         <Icons>
-          <Icon src="../img/searchicon.png" alt="Search Icon" />
-          <Button>Search Now</Button>
+          {/* <Icon src="../img/searchicon.png" alt="Search Icon" /> */}
+          {/* <Button>Search Now</Button> */}
           {/* Hamburger menu icon */}
           <HamburgerIcon onClick={toggleMenu}>
             <span></span>

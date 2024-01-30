@@ -150,7 +150,7 @@ function Home() {
          <Desc style={descAnimation}>
             As a dedicated Full Stack Developer specializing in the MERN stack, I bring a robust blend of technical expertise and innovative problem-solving skills to the table. My passion lies in exploring cutting-edge technologies and developing scalable, efficient solutions that drive business success.
        </Desc>
-          <Button to="/contact">Hire ME</Button>
+          <Button to="/contact">Contact me</Button>
         </Left>
         <Right>
           <Img src="../img/space.png" alt="Innovative Space" />

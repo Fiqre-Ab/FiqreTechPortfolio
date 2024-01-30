@@ -2,13 +2,13 @@
 
 /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 0.2rem; /* Adjust the width of the scrollbar */
+  width: 0.2rem; /* width of the scrollbar */
   display: none; /* Hide scrollbar */
 }
 
 /* Hide scrollbar for Firefox */
 * {
-  scrollbar-width: thin; /* Adjust the width of the scrollbar */
+  scrollbar-width: thin; /* width of the scrollbar */
   scrollbar-color: transparent transparent; /* Hide scrollbar */
 }
 
