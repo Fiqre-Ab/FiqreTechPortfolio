@@ -1,7 +1,9 @@
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense, lazy } from 'react';
+
+const Scene3D = lazy(() => import('../component/Scene3D'));
 
 /* ---------- keyframe animations ---------- */
 
@@ -196,33 +198,12 @@ const Right = styled(motion.div)`
   justify-content: center;
   align-items: center;
   position: relative;
+  min-height: 420px;
 
   @media (max-width: 768px) {
     order: -1;
-  }
-`;
-
-const ImgGlow = styled.div`
-  position: absolute;
-  width: 360px;
-  height: 360px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(218,78,162,0.2) 0%, rgba(52,152,219,0.15) 60%, transparent 80%);
-  filter: blur(20px);
-  animation: ${floatBob} 4s ease-in-out infinite;
-`;
-
-const Img = styled.img`
-  width: 500px;
-  height: 380px;
-  object-fit: contain;
-  position: relative;
-  animation: ${floatBob} 4s ease-in-out infinite;
-  filter: drop-shadow(0 0 24px rgba(52,152,219,0.4));
-
-  @media (max-width: 768px) {
-    width: 70%;
-    height: auto;
+    width: 100%;
+    min-height: 340px;
   }
 `;
 
@@ -365,8 +346,9 @@ function Home() {
           animate={mounted ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
         >
-          <ImgGlow />
-          <Img src="../img/space.png" alt="Innovative Space" />
+          <Suspense fallback={null}>
+            <Scene3D />
+          </Suspense>
         </Right>
       </Containers>
     </Section>

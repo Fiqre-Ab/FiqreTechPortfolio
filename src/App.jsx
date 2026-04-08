@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Outlet } from 'react-router-dom';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
+import AIAssistant from './component/AIAssistant';
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -45,6 +46,7 @@ function App() {
         <Outlet />
       </Content>
       <Footer />
+      <AIAssistant />
     </StyledContainer>
   );
 }

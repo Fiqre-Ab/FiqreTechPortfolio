@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Works from "./pages/Work";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+import Games from "./pages/Games";
 import Error from "./pages/Error";
 
 const router = createBrowserRouter([
@@ -18,7 +19,8 @@ const router = createBrowserRouter([
       { path: "about", element: <About/> },
       { path: "portfolio", element: <Works/> },
       { path: "resume", element: <Resume/> },
-      { path: "contact", element: <Contact/> }
+      { path: "contact", element: <Contact/> },
+      { path: "games", element: <Games/> }
     ]
   }
 ]);
