@@ -55,12 +55,6 @@ styled-components
 react-router-dom
 Other technologies you may have used in your projects
 
-## Contact
-If you have any questions or would like to connect, feel free to reach out:
-
-Email: your.email@example.com
-LinkedIn: Your LinkedIn Profile
-GitHub: Your GitHub Profile
 
 ## License
 This project is licensed under the MIT License.
