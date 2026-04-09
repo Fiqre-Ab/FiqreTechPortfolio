@@ -8,7 +8,6 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  scroll-snap-type: y mandatory;
   background: url("../img/bg.png");
   background-attachment: fixed;
   background-size: cover;
