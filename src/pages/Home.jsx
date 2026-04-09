@@ -645,7 +645,7 @@ function Home() {
           </Greeting>
 
           <Title variants={fadeUp} custom={0.12} initial="hidden" animate={mounted ? 'show' : 'hidden'}>
-            Backend-Focused<br />Full Stack Dev
+           Full Stack Dev
           </Title>
 
           <RoleBlock variants={fadeUp} custom={0.25} initial="hidden" animate={mounted ? 'show' : 'hidden'}>
